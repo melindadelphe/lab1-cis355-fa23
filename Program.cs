@@ -61,7 +61,7 @@ app.MapPost("/Book", (Book newBook, IBookService BookService) =>
 
     // Return a 201 Created status along with the newly created Book.
     // The Created status code indicates that the resource was successfully created.
-    return Results.Created($"/Author/{newBook.Id}", newBook);
+    return Results.Created($"/Book/{newBook.Id}", newBook);
 });
 
 // Map a PUT request to the "/Book/{id}" endpoint.
